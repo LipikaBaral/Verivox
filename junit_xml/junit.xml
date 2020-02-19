@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="13.285305">
+    <testcase classname="Verivox DSL feature Test" name="Verify DSL Result List" time="5.408085">
+        <failure message="org.junit.ComparisonFailure: VERIVOX | Tarife vergleichen &amp; stressfrei sparen! expected:&lt;[VERIVOX | Tarife vergleichen &amp; stressfrei sparen]!&gt; but was:&lt;[Title doesn't match!]!&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#10;&#9;at stepDefinitions.DSLVergleich.user_on_Verivox_main_page(DSLVergleich.java:88)&#10;&#9;at ✽.User is on Verivox main page(file:/Users/Lipika/Desktop/Selenium/Work/VerivoxTestAutomationTask/src/main/java/Features/DSL.feature:5)&#10;">
+            <![CDATA[Given User is on Verivox main page..........................................failed
+When he is on DSL vergleich.................................................skipped
+And he enters "030" and "16" and clicks on JETZT VERGLEICHEN................skipped
+Then he is able to see all the available tariffs in the Tariffs page........skipped
+
+StackTrace:
+org.junit.ComparisonFailure: VERIVOX | Tarife vergleichen & stressfrei sparen! expected:<[VERIVOX | Tarife vergleichen & stressfrei sparen]!> but was:<[Title doesn't match!]!>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at stepDefinitions.DSLVergleich.user_on_Verivox_main_page(DSLVergleich.java:88)
+	at ✽.User is on Verivox main page(file:/Users/Lipika/Desktop/Selenium/Work/VerivoxTestAutomationTask/src/main/java/Features/DSL.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Verivox DSL feature Test" name="Verify Offer Detail Page" time="3.953641">
+        <failure message="org.junit.ComparisonFailure: VERIVOX | Tarife vergleichen &amp; stressfrei sparen! expected:&lt;[DSL-Preisvergleich aller DSL-Anbieter in Deutschland]&gt; but was:&lt;[Title doesn't match!!]&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#10;&#9;at stepDefinitions.DSLVergleich.user_is_on_the_DSL_Result_List_page(DSLVergleich.java:140)&#10;&#9;at ✽.User is on the DSL Result List page(file:/Users/Lipika/Desktop/Selenium/Work/VerivoxTestAutomationTask/src/main/java/Features/DSL.feature:18)&#10;">
+            <![CDATA[Given User is on the DSL Result List page...................................failed
+When he selects one of the listed Tariffs and clicks on mehr zum Tarif button.skipped
+Then he should be able see the details of the selected Tariff...............skipped
+And he should also see a button labeled as In five Minuten online wechseln..skipped
+
+StackTrace:
+org.junit.ComparisonFailure: VERIVOX | Tarife vergleichen & stressfrei sparen! expected:<[DSL-Preisvergleich aller DSL-Anbieter in Deutschland]> but was:<[Title doesn't match!!]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at stepDefinitions.DSLVergleich.user_is_on_the_DSL_Result_List_page(DSLVergleich.java:140)
+	at ✽.User is on the DSL Result List page(file:/Users/Lipika/Desktop/Selenium/Work/VerivoxTestAutomationTask/src/main/java/Features/DSL.feature:18)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Verivox DSL feature Test" name="Verify Offer Detail Page 2" time="3.923579">
+        <failure message="org.junit.ComparisonFailure: VERIVOX | Tarife vergleichen &amp; stressfrei sparen! expected:&lt;[DSL-Preisvergleich aller DSL-Anbieter in Deutschland]&gt; but was:&lt;[Title doesn't match!!]&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#10;&#9;at stepDefinitions.DSLVergleich.user_is_on_the_DSL_Result_List(DSLVergleich.java:174)&#10;&#9;at ✽.User is on the DSL Result List(file:/Users/Lipika/Desktop/Selenium/Work/VerivoxTestAutomationTask/src/main/java/Features/DSL.feature:26)&#10;">
+            <![CDATA[Given User is on the DSL Result List........................................failed
+When there are more than twenty tariffs available...........................skipped
+And user clicks on this link................................................undefined
+Then the list should be appended with next twenty tariffs and so on until all Tariffs are loaded.skipped
+
+StackTrace:
+org.junit.ComparisonFailure: VERIVOX | Tarife vergleichen & stressfrei sparen! expected:<[DSL-Preisvergleich aller DSL-Anbieter in Deutschland]> but was:<[Title doesn't match!!]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at stepDefinitions.DSLVergleich.user_is_on_the_DSL_Result_List(DSLVergleich.java:174)
+	at ✽.User is on the DSL Result List(file:/Users/Lipika/Desktop/Selenium/Work/VerivoxTestAutomationTask/src/main/java/Features/DSL.feature:26)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
